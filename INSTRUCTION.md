@@ -11,6 +11,17 @@ Follow the steps below to build, run, and access the application.
 
 ---
 
+## 0. Prerequisites
+
+Add this line to your requirements.txt file:
+requirements.txt
+
+mysql-connector-python==8.2.0
+
+This package is required because Django cannot use mysql.connector.django without it. Without it, the TodoApp will fail to connect to the MySQL database.
+
+
+
 ## 1. Build and Push MySQL image to Docker Hub
 
 ```bash
